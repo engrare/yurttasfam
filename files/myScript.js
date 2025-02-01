@@ -13,9 +13,8 @@ $( document ).ready(function() {
 		img.src = imagePath + index + ".jpg";
 
 		img.onload = function () {
-			$('.swiper-slide:eq(' + index + ') .swiper_slide_img').attr("src", img.src);
-			$('.swiper-slide:eq(' + index + ') .go_furniture_detail .go_furniture_detail_cont_1 .img_slogan_cont .img_slogan_txt').multiline(img.src);
-			$("#gallery").append(`<img src="${img.src}" alt="Resim ${index}">`);
+			$('.swiper-slide:eq(' + (index - 1) + ') .swiper_slide_img').attr("src", img.src);
+			$('.swiper-slide:eq(' + (index - 1) + ') .go_furniture_detail .go_furniture_detail_cont_1 .img_slogan_cont .img_slogan_txt').text(img.src);
 			index++;
 			loadImage(); // Sonraki resmi yükle
 		};
@@ -25,7 +24,7 @@ $( document ).ready(function() {
 		};
 	}
 	
-	
+	loadImage();
 	
 	var mySwiper = new Swiper('.swiper-container', {
 		navigation: {
