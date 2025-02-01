@@ -57,7 +57,7 @@ p {
 
 .main_div {
 	width: 100%;
-	overflow-x: hidden;
+	overflow: hidden;
 	height: auto;
 	position: relative;
 	z-index: 0;
