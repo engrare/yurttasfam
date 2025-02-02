@@ -4,6 +4,7 @@ body {
     margin: 0px !important;
 	color: white;
 	font-family: Atkinson Hyperlegible, sans-serif;
+	overflow: hidden;
 	/*text-shadow: -1px 0 black, 0 1px white, 1px 0 white, 0 -1px white;*/
 }
 
